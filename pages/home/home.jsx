@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Banner from "../components/banner/banner";
-import Offer from "../components/home/offer";
-import Service from "../components/home/service";
+import Banner from "../../components/banner/banner";
+import Offer from "../../components/home/offer";
+import Service from "../../components/home/service";
 
 function Home() {
   return (
