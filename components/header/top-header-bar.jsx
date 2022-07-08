@@ -4,14 +4,14 @@ import { LOG_IN } from "../../constants";
 function TopHeaderBar() {
   return (
     <section id="sp-top-bar">
-      <div class="container">
-        <div class="row">
-          <div id="sp-logo" class="col-sm-3 col-md-3">
-            <a class="logo" href="/">
+      <div className="container">
+        <div className="row">
+          <div id="sp-logo" className="col-sm-3 col-md-3">
+            <a className="logo" href="/">
               <h5>
                 <img
-                  class="sp-default-logo"
-                  src="images/logo-small-prod.png"
+                  className="sp-default-logo"
+                  src="/images/logo-small-prod.png"
                   alt="Load Dispatch"
                 />
                 <br />
@@ -20,30 +20,30 @@ function TopHeaderBar() {
               </h5>
             </a>
           </div>
-          <div id="sp-top2" class="col-sm-9 col-md-9 hidden-xs">
-            <ul class="sp-contact-info">
-              <li class="sp-contact-time">
-                <i class="icon-login"></i>
-                <p class="contact-content">
+          <div id="sp-top2" className="col-sm-9 col-md-9 hidden-xs">
+            <ul className="sp-contact-info">
+              <li className="sp-contact-time">
+                <i className="icon-login"></i>
+                <p className="contact-content">
                   {" "}
                   <a href={LOG_IN}>
-                    <span class="contact-title">Sign In</span>{" "}
+                    <span className="contact-title">Sign In</span>{" "}
                   </a>
                 </p>
               </li>
-              <li class="sp-contact-phone">
-                <i class="icon-user"></i>
-                <p class="contact-content">
+              <li className="sp-contact-phone">
+                <i className="icon-user"></i>
+                <p className="contact-content">
                   {" "}
                   <a href="/register">
                     {" "}
-                    <span class="contact-title">Sign Up</span>
+                    <span className="contact-title">Sign Up</span>
                   </a>{" "}
                 </p>
               </li>
-              <li class="sp-contact-email">
-                <i class="icon-envelope-letter"></i>
-                <p class="contact-content">
+              <li className="sp-contact-email">
+                <i className="icon-envelope-letter"></i>
+                <p className="contact-content">
                   {" "}
                   <span>contact@loaddispatch.com.ng</span>
                 </p>

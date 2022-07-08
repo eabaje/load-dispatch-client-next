@@ -15,7 +15,7 @@ import BreadCrumb from "../../components/banner/breadcrumb";
 import updateAction from "../../context/updateAction";
 import { API_URL, LOG_IN } from "../../constants";
 import { getError } from "../../utils/error";
-import "./register.css";
+//import "./register.css";
 import LoadingBox from "../../components/message/LoadingBox";
 
 function Register() {

@@ -73,6 +73,7 @@ export default class MyDocument extends Document {
               type="text/css"
             />
             <link rel="stylesheet" type="text/css" href="/css/style.css" />
+            <script src="/js/jQuery.js" type="text/javascript"></script>
           </Head>
           <body>
             <Main />

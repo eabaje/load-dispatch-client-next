@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Banner from "../components/banner/banner";
 import Offer from "../components/home/offer";
 import Service from "../components/home/service";
+import dynamic from "next/dynamic";
 
 function Home() {
   return (
@@ -37,3 +38,4 @@ function Home() {
 }
 
 export default Home;
+//export default dynamic(() => Promise.resolve(Home), { ssr: false });

@@ -20,6 +20,7 @@
     "cra-template": "1.1.2",
     "little-state-machine": "^4.2.0",
     "next": "^12.0.8",
+    "next-absolute-url": "^1.2.2",
     "notistack": "^1.0.9",
     "react": "^17.0.2",
     "react-country-region-selector": "^3.4.0",
