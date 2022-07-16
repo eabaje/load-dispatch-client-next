@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useRef } from "react";
 import { useState, useEffect } from "react";
-import { useSnackbar } from "notistack";
+
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -15,12 +15,11 @@ import BreadCrumb from "../../components/banner/breadcrumb";
 import updateAction from "../../context/updateAction";
 import { API_URL, LOG_IN } from "../../constants";
 import { getError } from "../../utils/error";
+import { toast } from "react-toastify";
 //import "./register.css";
 import LoadingBox from "../../components/message/LoadingBox";
 
 function Register() {
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
-
   const [formStep, setFormStep] = useState(0);
   const { actions, state } = useStateMachine({ updateAction });
 
@@ -119,7 +118,7 @@ function Register() {
   // Error Component
   const errorMessage = (error) => {
     return (
-      <p class="invalid-feedback" style={{ color: "red" }}>
+      <p className="invalid-feedback" style={{ color: "red" }}>
         {error}
       </p>
     );
@@ -158,7 +157,7 @@ function Register() {
       }
     } catch (err) {
       setLoading(false);
-      enqueueSnackbar(getError(err), { variant: "error" });
+      toast.error(getError(err));
     }
     // props.history.push("./step2");
   };
@@ -166,10 +165,10 @@ function Register() {
   return (
     <div>
       <BreadCrumb name="Register" />
-      <section id="history" class="space-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 history-block">
+      <section id="history" className="space-top">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 history-block">
               <h2>Sign Up Now</h2>
               <p>
                 New users can enjoy LoadDispatch for 30-days at no-charge. After
@@ -190,11 +189,11 @@ function Register() {
           </div>
         </div>
       </section>
-      <section id="about" class="space bg-color">
-        <div class="container">
+      <section id="about" className="space bg-color">
+        <div className="container">
           {formStep === 0 && (
-            <div class="row">
-              <div class="col-md-6 col-xs-12">
+            <div className="row">
+              <div className="col-md-6 col-xs-12">
                 <h3>Pricing Information</h3>
                 <ul>
                   <li>
@@ -222,7 +221,7 @@ function Register() {
                   </li>
                 </ul>
               </div>
-              <div class="col-md-6 col-xs-12">
+              <div className="col-md-6 col-xs-12">
                 <h3>Important Notice!</h3>
                 <p>
                   If you have previously had an account, please{" "}
@@ -233,8 +232,8 @@ function Register() {
             </div>
           )}
           {/* {loading && <LoadingBox/>} */}
-          <div class="row">
-            <div class="col-sm-12 about-block">
+          <div className="row">
+            <div className="col-sm-12 about-block">
               <div className="col-sm-12">
                 {formStep === 0 && (
                   <form onSubmit={handleCompany(onSubmitCompany)}>
@@ -245,7 +244,7 @@ function Register() {
                       <div className="form-group col-sm-4">
                         <select
                           name="RoleType"
-                          class="form-control"
+                          className="form-control"
                           id="RoleType"
                           {...register("RoleType", {
                             required: "* Please describe your business",
@@ -330,7 +329,7 @@ function Register() {
                       <div className="form-group col-sm-4">
                         <select
                           name="Country"
-                          class="form-control"
+                          className="form-control"
                           {...register("Country", {
                             required: "Select Country",
                           })}
@@ -348,7 +347,7 @@ function Register() {
                       <div className="form-group col-sm-4">
                         <select
                           name="Region"
-                          class="form-control"
+                          className="form-control"
                           id="Region"
                           {...register("Region", {
                             required: true,
@@ -494,7 +493,7 @@ function Register() {
                             "Please use the following format MM/DD/YYYY"
                           )}
                       </div> */}
-                      <div class="row">
+                      <div className="row">
                         <div className="col-sm-9">
                           <input
                             className="btn btn-primary  "
@@ -503,7 +502,7 @@ function Register() {
                             onClick={goBack}
                           />
                         </div>
-                        <div class="col-sm-3 action-block text-right ">
+                        <div className="col-sm-3 action-block text-right ">
                           <input
                             className="btn btn-primary  "
                             type="submit"
@@ -518,8 +517,8 @@ function Register() {
                 {formStep === 2 && (
                   <form onSubmit={handleSubscribe(onSubmitSubscribe)}>
                     <section id="Subscription">
-                      <div class="row">
-                        <div class="col-md-6 col-xs-6">
+                      <div className="row">
+                        <div className="col-md-6 col-xs-6">
                           <h3>Subscription Information</h3>
                           <hr />
                           <p>
@@ -532,7 +531,7 @@ function Register() {
                             your subscription.{" "}
                           </p>
                         </div>
-                        <div class="col-md-6 col-xs-6 ">
+                        <div className="col-md-6 col-xs-6 ">
                           {" "}
                           <div>
                             <h3>Payment Method</h3>
@@ -601,11 +600,11 @@ function Register() {
                           onClick={goBack}
                         />
                       </div>
-                      <div class="col-sm-6 text-right ">
+                      <div className="col-sm-6 text-right ">
                         {loading ? (
                           <button
                             type="submit"
-                            class="btn  btn-primary"
+                            className="btn  btn-primary"
                             disabled={disabled}
                           >
                             {" "}
@@ -615,7 +614,7 @@ function Register() {
                         ) : (
                           <button
                             type="submit"
-                            class="btn  btn-primary"
+                            className="btn  btn-primary"
                             disabled={disabled}
                           >
                             Submit{" "}
@@ -628,8 +627,8 @@ function Register() {
 
                 {formStep === 3 && (
                   <section id="Thanks">
-                    <div class="row">
-                      <div class="col-md-6 col-xs-6">
+                    <div className="row">
+                      <div className="col-md-6 col-xs-6">
                         <h3>You are done</h3>
                         <hr />
                         <p>
@@ -643,7 +642,7 @@ function Register() {
                           area Kindly <a href={LOG_IN}>click</a> to access.
                         </p>
                       </div>
-                      <div class="col-md-6 col-xs-6 "> </div>
+                      <div className="col-md-6 col-xs-6 "> </div>
                     </div>
 
                     <hr />
@@ -654,16 +653,18 @@ function Register() {
           </div>
         </div>
       </section>
-      <section class="action">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-9 action-block">
-              <h2 class="title">Do you need a Carrier to lift your cargo?</h2>
+      <section className="action">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-9 action-block">
+              <h2 className="title">
+                Do you need a Carrier to lift your cargo?
+              </h2>
             </div>
-            <div class="col-sm-3 action-block text-right ">
+            <div className="col-sm-3 action-block text-right ">
               <a
                 href="/register"
-                class="sppb-btn sppb-btn-default sppb-btn-right"
+                className="sppb-btn sppb-btn-default sppb-btn-right"
               >
                 Sign UP
               </a>

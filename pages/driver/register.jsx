@@ -16,7 +16,7 @@ import CustomButton from "../../components/button/customButton";
 import updateAction from "../../context/updateAction";
 import { API_URL, LOG_IN } from "../../constants";
 import { getError } from "../../utils/error";
-//import "../../styles/register.css";
+
 import LoadingBox from "../../components/message/LoadingBox";
 import { fetchData } from "../../helpers/query";
 import dynamic from "next/dynamic";
@@ -166,7 +166,8 @@ function DriverRegister({ query }) {
     data.append("City", form.City);
     data.append("Region", form.Region);
     data.append("Country", form.Country);
-    data.append("Licensed", form.Licensed);
+    data.append("LicenseNo", form.LicenseNo);
+    data.append("Password", form.Password);
     data.append("filePicUrl", picFile);
     data.append("fileLicenseUrl", docFile);
 
@@ -180,6 +181,7 @@ function DriverRegister({ query }) {
       if (res) {
         setLoading(false);
         setDisabled(false);
+        toast.success(res.data.message);
         // history.push(LOG_IN);
 
         //  window.open(LOG_IN, "_blank");
@@ -332,6 +334,41 @@ function DriverRegister({ query }) {
                         </div>
                       </div>
                       <div className="form-group row">
+                        <label className="col-sm-2 col-form-label">
+                          Password
+                        </label>
+                        <div className="col-sm-4">
+                          <input
+                            name="Password"
+                            type="password"
+                            className="form-control"
+                            placeholder="Password"
+                            {...register("Password", {
+                              required: true,
+                            })}
+                            required
+                          />
+                        </div>
+
+                        <label className="col-sm-2 col-form-label">
+                          Confirm Password
+                        </label>
+                        <div className="col-sm-4">
+                          <input
+                            name="ConfirmPassword"
+                            className={`form-control ${
+                              errors.ConfirmPassword ? "is-invalid" : ""
+                            }`}
+                            type="password"
+                            placeholder="Confirm Password"
+                            {...register("ConfirmPassword", {
+                              required: true,
+                            })}
+                          />
+                          {errorMessage(errors.ConfirmPassword?.message)}
+                        </div>
+                      </div>
+                      <div className="form-group row">
                         <label className="col-sm-2 col-form-label">DOB</label>
                         <div className="col-sm-4">
                           <Controller
@@ -431,19 +468,18 @@ function DriverRegister({ query }) {
                       </div>
 
                       <div className="form-group row">
-                        <div className="col-sm-2"> Drivers License?</div>
+                        <label className="col-form-label col-md-2">
+                          Drivers License No
+                        </label>
                         <div className="col-md-4">
-                          <div className="form-check">
-                            <input
-                              className="form-check-input"
-                              name="Licensed"
-                              type="checkbox"
-                              {...register("Licensed", {
-                                required: true,
-                              })}
-                              required
-                            />
-                          </div>
+                          <input
+                            name="LicenseNo"
+                            className="form-control"
+                            placeholder="License No"
+                            {...register("LicenseNo", {
+                              required: true,
+                            })}
+                          />
                         </div>{" "}
                         <label className="col-form-label col-md-2">
                           Attach Drivers License

@@ -42,15 +42,15 @@ const NavBar = () => {
   console.log(url);
   return (
     <header id="sp-header">
-      <div class="container">
-        <div class="row">
-          <div id="sp-menu" class="col-sm-12 col-md-12">
-            <div class="sp-column ">
-              <div class="sp-megamenu-wrapper">
+      <div className="container">
+        <div className="row">
+          <div id="sp-menu" className="col-sm-12 col-md-12">
+            <div className="sp-column ">
+              <div className="sp-megamenu-wrapper">
                 <a id="offcanvas-toggler" href="#">
-                  <i class="fa fa-bars"></i>
+                  <i className="fa fa-bars"></i>
                 </a>
-                <ul class="sp-megamenu-parent menu-fade-up hidden-xs">
+                <ul className="sp-megamenu-parent menu-fade-up hidden-xs">
                   <li
                     className={
                       url[1] === "" ? "sp-menu-item active" : "sp-menu-item "
