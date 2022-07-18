@@ -483,9 +483,8 @@ function InviteToRegister({ match }) {
                           <div className="form-check">
                             <input
                               className="form-check-input"
-                              name="Licensed"
-                              type="checkbox"
-                              {...register("Licensed", {
+                              name="LicenseNo"
+                              {...register("LicenseNo", {
                                 required: true,
                               })}
                               required
