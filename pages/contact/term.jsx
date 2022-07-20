@@ -11,23 +11,22 @@ function Term() {
         </div>
         <div class="terms">
           <p>
-            These Terms of Use govern your use of: (1) the CentralDispatch
-            website (www.centraldispatch.com) and all of the content, tools,
-            applications (including mobile applications), and services available
-            through the CentralDispatch website (collectively, the "
-            <b>CentralDispatch Site</b>"); and (2) the jTracker website
-            (www.jtracker.com) and all of the content, tools, applications
+            These Terms of Use govern your use of: (1) the LoadDispatch website
+            (www.LoadDispatch.com) and all of the content, tools, applications
             (including mobile applications), and services available through the
-            jTracker website (collectively, the "<b>jTracker Site</b>"). The
-            CenralDispatch Site and the jTracker Site are each referred to
-            individually as a "<b>Site</b>" and collectively as the "
-            <b>Sites.</b>" As used herein, (i) "you" or "your" refers to you as
-            a user of one or both Sites; (ii) "Dealertrack", "CentralDispatch",
-            "we", or "us" refers to Dealertrack CentralDispatch, Inc. and
-            Dealertrack, Inc.; and (iii) "Terms of Use" refers to these Terms of
-            Use, together with any other notices, policies, disclaimers, or
-            restrictions posted by us on any of the Sites (collectively, the "
-            <b>Terms of Use</b>").
+            LoadDispatch website (collectively, the "<b>LoadDispatch Site</b>");
+            and (2) the jTracker website (www.jtracker.com) and all of the
+            content, tools, applications (including mobile applications), and
+            services available through the jTracker website (collectively, the "
+            <b>jTracker Site</b>"). The CenralDispatch Site and the jTracker
+            Site are each referred to individually as a "<b>Site</b>" and
+            collectively as the "<b>Sites.</b>" As used herein, (i) "you" or
+            "your" refers to you as a user of one or both Sites; (ii)
+            "Dealertrack", "LoadDispatch", "we", or "us" refers to Dealertrack
+            LoadDispatch, Inc. and Dealertrack, Inc.; and (iii) "Terms of Use"
+            refers to these Terms of Use, together with any other notices,
+            policies, disclaimers, or restrictions posted by us on any of the
+            Sites (collectively, the "<b>Terms of Use</b>").
           </p>
           <p>
             Use of the Sites is restricted to Dealertrack and its authorized
@@ -41,7 +40,7 @@ function Term() {
             are an employee or agent of a party described in item 1 above; (3)
             you represent to us that you are the user assigned to use the login
             ID and password that is accessing the Site; and (4) you agree to be
-            bound by these Terms of Use. Authorized Users of the CentralDispatch
+            bound by these Terms of Use. Authorized Users of the LoadDispatch
             Site will be referred to herein as "<b>CD Members.</b>" Authorized
             users of the jTracker Site will be referred to as "
             <b>JT Members.</b>" The term "<b>Member</b>" or "<b>Members</b>"
@@ -52,42 +51,41 @@ function Term() {
           </p>
           <ol>
             <li>
-              <b>Introduction to CentralDispatch and jTracker:</b>
+              <b>Introduction to LoadDispatch and jTracker:</b>
             </li>
             <ol style={{ "list-style-type": "lower-alpha" }}>
               <li>
-                <b>The CentralDispatch System.</b> Through the CentralDispatch
-                Site, we offer an Internet-based system (the "CentralDispatch
-                System") that allows individuals and companies that have
-                vehicles to ship to connect with vehicle transportation
-                companies by: (1) allowing CD Members to post data and
-                information regarding vehicles for shipment or vehicle
-                transportation services, references, evidence of insurance
-                coverage, copies of government licenses, and other data and
-                information that can be reviewed by other CD Members who may be
-                interested in entering into a business relationship, and (2)
-                allowing CD Members to make their own independent evaluations of
-                whether they are interested in entering into business
-                relationships with other CD Members. The CentralDispatch System
-                may also allow CD Members to "rate" other Members or to provide
-                information of general interest to other CD Members with regard
-                to, for example, truck stops, repair centers, and insurance
-                companies. You understand and acknowledge that we do not and
-                cannot control the reliability, completeness, usefulness,
-                safety, or accuracy of information available through the
-                CentralDispatch Site, including, without limitation, through the
-                CentralDispatch System, because such data and information is
+                <b>The LoadDispatch System.</b> Through the LoadDispatch Site,
+                we offer an Internet-based system (the "LoadDispatch System")
+                that allows individuals and companies that have vehicles to ship
+                to connect with vehicle transportation companies by: (1)
+                allowing CD Members to post data and information regarding
+                vehicles for shipment or vehicle transportation services,
+                references, evidence of insurance coverage, copies of government
+                licenses, and other data and information that can be reviewed by
+                other CD Members who may be interested in entering into a
+                business relationship, and (2) allowing CD Members to make their
+                own independent evaluations of whether they are interested in
+                entering into business relationships with other CD Members. The
+                LoadDispatch System may also allow CD Members to "rate" other
+                Members or to provide information of general interest to other
+                CD Members with regard to, for example, truck stops, repair
+                centers, and insurance companies. You understand and acknowledge
+                that we do not and cannot control the reliability, completeness,
+                usefulness, safety, or accuracy of information available through
+                the LoadDispatch Site, including, without limitation, through
+                the LoadDispatch System, because such data and information is
                 provided solely by the CD Members over whom we have no control.
               </li>
               <li>
-                <b>The jTracker System.</b> As an add-on to the CentralDispatch
+                <b>The jTracker System.</b> As an add-on to the LoadDispatch
                 System, we offer an Internet-based system (the "jTracker
                 System") that offers additional features to companies and
                 individuals in the auto transport industry. The jTracker System
                 allows users to, among other things, manage leads, quotes,
                 orders, payments, and dispatching. In order to become and remain
                 a JT Member, you must also be a CD Member and must maintain your
-                subscription to the CentralDispatch System in good standing.
+                subscription to the LoadDispatch System in good standing.
               </li>
             </ol>
             <li>
@@ -128,8 +126,8 @@ function Term() {
                   If you are a Member and a broker, dealer, freight forwarder,
                   auction, corporate relocation specialist, manufacturer, rental
                   agency, or other entity that posts vehicles for shipment on
-                  the CentralDispatch Site and enters into a business
-                  relationship with another Member:
+                  the LoadDispatch Site and enters into a business relationship
+                  with another Member:
                   <ol style={{ "list-style-type": "lower-roman" }}>
                     <li>
                       You are solely and fully responsible for abiding by all
@@ -139,12 +137,12 @@ function Term() {
                       (2) making prompt payment of outstanding balances owed to
                       carriers; (3) ensuring that the bill of lading accurately
                       reflects the condition of the vehicle at pickup and
-                      delivery; (4) providing CentralDispatch with a copy of the
+                      delivery; (4) providing LoadDispatch with a copy of the
                       signed bill of lading in the event of a dispute with a
-                      carrier; (5) removing from view on the CentralDispatch
-                      Site loads that you have posted for shipment once an
-                      agreement has been made to ship such loads with a carrier;
-                      (6) interacting with all parties in a professional and
+                      carrier; (5) removing from view on the LoadDispatch Site
+                      loads that you have posted for shipment once an agreement
+                      has been made to ship such loads with a carrier; (6)
+                      interacting with all parties in a professional and
                       courteous manner; (7) maintaining adequate insurance and
                       applicable licenses and bonds at all times; and (8)
                       complying with all applicable laws, rules, and
@@ -429,8 +427,8 @@ function Term() {
             <li>
               <b>Relationships with other Members.</b> You understand and
               acknowledge that the Sites, including, without limitation, the
-              CentralDispatch System and the jTracker System, are provided to
-              you solely as means of helping you connect with companies and
+              LoadDispatch System and the jTracker System, are provided to you
+              solely as means of helping you connect with companies and
               individuals in the auto transport industry and providing you with
               related business management tools. Without limiting the generality
               of anything set forth in these Terms of Use, you also acknowledge
@@ -562,8 +560,8 @@ function Term() {
               without cancelling. After 90 days, we will automatically
               reactivate your account at the then-current subscription rate. You
               may reactivate a frozen account before the end of the 90-day
-              period by logging into the CentralDispatch Site or by contacting
-              us by phone at the number shown above.
+              period by logging into the LoadDispatch Site or by contacting us
+              by phone at the number shown above.
             </li>
             <li>
               <b>Promotional Codes.</b> If you entered a promotional code ("
@@ -751,11 +749,11 @@ function Term() {
                   <b>Arbitration.</b> You agree to arbitrate any dispute or
                   claim that you may have with us, or any of our affiliates,
                   that arises out of or relates in any way to the Sites, the
-                  CentralDispatch System, or the JTracker System. Such
-                  arbitration will be final and binding. If we elect in our
-                  discretion to submit to arbitration any dispute or claim that
-                  we may have against you, any such arbitration will be governed
-                  by the provisions of this Section.
+                  LoadDispatch System, or the JTracker System. Such arbitration
+                  will be final and binding. If we elect in our discretion to
+                  submit to arbitration any dispute or claim that we may have
+                  against you, any such arbitration will be governed by the
+                  provisions of this Section.
                 </li>
                 <li>
                   <b>Class Waiver.</b> Any arbitration proceeding under this
@@ -809,13 +807,13 @@ function Term() {
             </li>
             <li>
               <b>Governing Law.</b> Any dispute arising from or related to the
-              Sites, the CentralDispatch System, or the JTracker System, will be
+              Sites, the LoadDispatch System, or the JTracker System, will be
               governed and construed in accordance with the laws of the State of
               Georgia, without regard to its conflict of laws principles. Any
               action to enforce any arbitration proceeding, and any other legal
               action, suit or proceeding that is not otherwise subject to
               mandatory arbitration pursuant to Section 23 and arises under or
-              relates to the Sites, the CentralDispatch System, or the JTracker
+              relates to the Sites, the LoadDispatch System, or the JTracker
               System, will be filed exclusively in a state or federal court
               located in Fulton County, Georgia; you consent to such forum and
               waive any objection to the laying of venue in such forum.
@@ -872,10 +870,10 @@ function Term() {
               provide to us, including email addresses and phone numbers.
             </li>
             <li>
-              <b>Questions.</b> The CentralDispatch Site is provided by
-              Dealertrack CentralDispatch, Inc. and the jTracker Site is
-              provided by Dealertrack, Inc. If you have any questions, comments
-              or complaints regarding these Terms of Use or either of the Sites,
+              <b>Questions.</b> The LoadDispatch Site is provided by Dealertrack
+              LoadDispatch, Inc. and the jTracker Site is provided by
+              Dealertrack, Inc. If you have any questions, comments or
+              complaints regarding these Terms of Use or either of the Sites,
               feel free to contact Dealertrack through the Contact Us link found
               at the bottom of the Sites or by calling{" "}
               <a href="tel:18009287869">1-800-928-7869</a>
