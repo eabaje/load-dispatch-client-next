@@ -371,27 +371,11 @@ function DriverRegister({ query }) {
                       <div className="form-group row">
                         <label className="col-sm-2 col-form-label">DOB</label>
                         <div className="col-sm-4">
-                          <Controller
-                            name={"DOB"}
-                            control={control}
-                            // defaultValue={new Date()}
-                            render={({ field: { onChange, value } }) => {
-                              return (
-                                <DatePicker
-                                  wrapperclassName="datePicker"
-                                  className="form-control datepicker"
-                                  onChange={onChange}
-                                  selected={Date.parse(value)}
-                                  yearDropdownItemNumber={100}
-                                  // dateFormat="dd-MM-yyyy"
-                                  scrollableYearDropdown={true}
-                                  showYearDropdown
-                                  showMonthDropdown
-                                  placeholderText="Enter date"
-                                  customInput={<CustomInput />}
-                                />
-                              );
-                            }}
+                          <input
+                            type="date"
+                            class="form-control"
+                            required
+                            {...register("DOB")}
                           />
                         </div>
 
@@ -502,8 +486,8 @@ function DriverRegister({ query }) {
                       </div>
                       <div className="form-group"></div>
 
-                      <div className="form-row">
-                        <div className="col-sm-10 ">
+                      <div className="form-group row">
+                        <div className="col-sm-12 ">
                           <div className="form-check">
                             <input
                               className="form-check-input"

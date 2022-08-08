@@ -106,6 +106,7 @@ export default class MyDocument extends Document {
               type="text/javascript"
             ></script>
             <script src="/js/odometer.min.js" type="text/javascript"></script>
+
             <script src="/js/main.js" type="text/javascript"></script>
           </body>
         </Html>

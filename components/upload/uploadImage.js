@@ -32,20 +32,7 @@ export default function ImageUpload(props) {
     setMessage("");
   };
 
-  useEffect(() => {
-    //  alert(props.refId);
-    if (refId !== undefined) {
-      getImg(url, refId).then((files) => {
-        const photos = files.data.data;
-
-        //  alert(newMarkers);
-        setImageInfo(files.data.data);
-
-        //  alert(imageGallery);
-        console.log("imageInfos", imageInfo);
-      });
-    }
-  }, [reload]);
+  useEffect(() => {}, []);
 
   return (
     <>
